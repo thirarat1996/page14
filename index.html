@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+<style>
+body, html {
+    height: 100%;
+    font-family: "Inconsolata", sans-serif;
+}
+.bgimg {
+    background-position: center;
+    background-size: cover;
+    background-image: url(0.jpg);
+    min-height: 75%;
+}
+.menu {
+    display: none;
+}
+</style>
+<body>
+
+<!-- Links (sit on top) -->
+<div class="w3-top">
+  <div class="w3-row w3-padding w3-black">
+    <div class="w3-col s3">
+      <a href="#" class="w3-button w3-block w3-black">HOME</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#about" class="w3-button w3-block w3-black">ABOUT</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#menu" class="w3-button w3-block w3-black">MENU</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#where" class="w3-button w3-block w3-black">WHERE</a>
+    </div>
+  </div>
+</div>
+
+<!-- Header with image -->
+<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-bottomleft w3-center w3-padding-large w3-hide-small">
+    <span class="w3-tag">Open from 10am to 10pm</span>
+  </div>
+  <div class="w3-display-middle w3-center">
+    <span class="w3-text-white" style="font-size:90px">NAMKIENGDIN</span>
+  </div>
+</header>
+
+<!-- Add a background color and large text to the whole page -->
+<div class="w3-sand w3-large">
+
+<!-- About Container -->
+<div class="w3-container" id="about">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">ABOUT THE NAMKIENGDIN</span></h5>
+    <p>สำหรับร้านอาหารน้ำเคียงดินเปิดให้บริการมาแล้วเป็นเวลากว่า 1 ปี โดยคุณภัทราพรรณ ภัทรนิตย์ ได้เปิดเผยกับแมวละเมอว่า ร้านน้ำเคียงดินที่ตั้งอยู่บริเวณทะเลสาบสงขลานั้นถือเป็นข้อได้เปรียบเพราะเชื่อว่าอาหารอร่อยควรอยู่เคียงข้างบรรยากาศที่ดี วิวสวย มองเห็นเมืองสงขลาได้โดยรอบเคียงข้างกับธรรมชาติอันสดชื่นหากต้องการเก็บความโรแมนติกสำหรับคู่รักระหว่างฮันนีมูนที่นี่สามารถจัดให้ได้เพราะมองเห็นพระอาทิตย์ตกดินได้อย่างชัดเจนเรียกได้ว่า บิ้วอารมณ์กันตั้งแต่ก่อนเข้าร้านกันเลยทีเดียว</p>
+    <div class="w3-panel w3-leftbar w3-pale-red">
+      <p><i>ร้านอาหารน้ำเคียงดิน เกาะยอ เปิดให้บริการทุกวันตั้งแต่เวลา 10.00 – 22.00 มีห้องจัดเลี้ยงพร้อมที่จอดรถไว้พร้อมบริการ ตั้งอยู่ที่ 59/2 หมู่ 1 ต.เกาะยอ อ.เมือง จ.สงขลา สำรองโต๊ะได้ที่ 074-591-747, 082-179-9709</i></p>
+    </div>
+    <img src=00.jpg style="width:100%;max-width:1000px" class="w3-margin-top">
+    <img src=3.jpg style="width:100%;max-width:1000px" class="w3-margin-top">
+  </div>
+</div>
+
+<!-- Menu Container -->
+<div class="w3-container" id="menu">
+  <div class="w3-content" style="max-width:700px">
+ 
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">THE MENU</span></h5>
+  
+   <div class="w3-row w3-center w3-card-2 w3-padding">
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Eat');" id="myLink">
+        <div class="w3-col s6 tablink">Eat</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Drinks');">
+        <div class="w3-col s6 tablink">Drink</div>
+      </a>
+    </div>
+
+    <div id="Eat" class="w3-container menu w3-padding-48 w3-card">
+      <h5>เมนูเด็ด</h5>
+      <p class="w3-text-grey">ขาหมูเยอรมัน</p>
+      <p class="w3-text-grey">ยำน้ำเคียงดิน</p>
+      <p class="w3-text-grey">หอยนางรม</p>
+      <p class="w3-text-grey">ต้มยำ</p>
+    </div>
+      
+    <div id="Drinks" class="w3-container menu w3-padding-48 w3-card-2">
+      <h5>น้ำเปล่า</h5>
+      <h5>น้ำอัดลม</h5>
+      <h5>น้ำแข็ง</h5>
+    </div>  
+   </div>
+      
+  <!-- Photo grid (modal) -->
+  <div class="w3-row-padding">
+    <div class="w3- third">
+      <img src=9.jpg style="width:100%">
+      <img src=10.jpg style="width:100%">
+    </div>
+
+    <div class="w3-third">
+      <img src=2.jpg style="width:100%">
+      <img src=4.jpg style="width:100%">
+  </div>
+  
+  <div class="w3- third">
+      <img src=7.jpg style="width:100%">
+      <img src=8.jpg style="width:100%">
+    </div>
+  </div>
+
+<!-- Contact/Area Container -->
+<div class="w3-container" id="where" style="padding-bottom:32px;">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">WHERE TO FIND US</span></h5>
+    <p>แผนที่ร้านน้ำเคียงดิน</p>
+    <div class="w3-center ">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3958.553346492786!2d100.54211651431952!3d7.177515094817808!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x304d3230f1c1b577%3A0xeb3e9d51b5a05976!2sRestaurant+Water+Land+Area!5e0!3m2!1sen!2sth!4v1493721019705" width="800" height="600" frameborder="0" style="border:0" allowfullscreen></div>
+    <p><strong>เปิดบริการ:</strong> เปิดให้บริการทุกวันตั้งแต่เวลา 10.00 – 22.00 น.</p>
+    <p><strong>ที่ตั้ง:</strong> 59/2 หมู่ 1 ต.เกาะยอ อ.เมือง จ.สงขลา </p>
+    <p><strong>เบอร์โทร:</strong> 074-591-747, 082-179-9709 </p>
+  </div>
+</div>
+
+<!-- End page content -->
+</div>
+
+<script>
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+     tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+}
+document.getElementById("myLink").click();
+</script>
+    
+<!--To use this code on your website, get a free API key from Google.Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp-->
+</body>
+</html>
